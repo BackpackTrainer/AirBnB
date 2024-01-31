@@ -39,4 +39,8 @@ public class Rental {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public double getRentalCharge()  {
+        return days * seasonType.getValue()* room.getRate();
+    }
 }

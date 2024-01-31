@@ -48,8 +48,6 @@ public class RoomRentalStepDefinitons {
 
     @Then("my bill is {double}")
     public void myBillIsAmount(double totalAmount) {
-        Assertions.assertEquals(totalAmount, rental.getRoom().getRate() *
-                rental.getDays() *
-                rental.getSeasonType().getValue(), 0.1);
+        Assertions.assertEquals(totalAmount, rental.getRentalCharge(), 0.1);
     }
 }

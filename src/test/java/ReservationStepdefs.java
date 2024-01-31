@@ -54,7 +54,7 @@ public class ReservationStepdefs {
             if (room.get("Room Name").equals(roomName)) {
                 Room roomToBook = new Room();
                 roomToBook.setName(roomName);
-                roomToBook.setRate(Double.parseDouble(room.get("Rate")));
+                roomToBook.setRate(Double.parseDouble(room.get("Base Rate")));
                 return roomToBook;
             }
         }
