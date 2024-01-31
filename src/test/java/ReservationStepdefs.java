@@ -63,9 +63,7 @@ public class ReservationStepdefs {
 
     @Then("my bill total is {double}")
     public void myBillTotalIsAmount(double totalAmount) {
-        Assertions.assertEquals(totalAmount, rental.getRoom().getRate() *
-                rental.getDays() *
-                rental.getSeasonType().getValue(), 0.1);
+        Assertions.assertEquals(totalAmount, rental.getRentalCharge(), 0.1);
     }
 
     @Given("I am a registered user")
