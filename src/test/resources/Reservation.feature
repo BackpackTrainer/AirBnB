@@ -6,7 +6,7 @@ Feature:
       | Room Name   | Base Rate |
       | Cliffhanger | 100       |
       | Slickrock   | 125       |
-    Given I am a registered user
+    Given the registered users are
       | Name         |
       | Bryan Hansen |
       | Sara Hansen  |

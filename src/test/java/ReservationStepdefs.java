@@ -66,7 +66,7 @@ public class ReservationStepdefs {
         Assertions.assertEquals(totalAmount, rental.getRentalCharge(), 0.1);
     }
 
-    @Given("I am a registered user")
+    @Given("the registered users are")
     public void iAmARegisteredUser(DataTable userTable) {
         this.registeredUsers = userTable.asMaps(String.class, String.class);
     }
